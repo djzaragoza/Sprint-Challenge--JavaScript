@@ -39,8 +39,13 @@ a function returns a value.  a method is similar to the function, except it focu
 Closure is a feature in JavaScript where an inner function has access to the outer function's variables.  it has access to its own scope, variables defined between its fcurly brackets.  it also has access to the outer function's variables.
 
 4. Describe the four rules of the 'this' keyword.
+Global Obj Binding - when in the global scope, the value of "this" will be the window object
+Implicit Binding - when a function is called by a preceding dot (dot notation), the object before that dot is "this."  One of the most commonly used notations
+New Binding - when a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function
+Explicit Binding - whenever JS call or apply method is used, "this" is explicitly defined
 
 5. Why do we need super() in an extended class?
+super() is required when the word "extends" is present, or it will not work.  super() replaces the "class.call" syntax to tell a parent's constructor to be concerned witht he child's attributes or vice versa.  it also takes away the "Object.create(this, Class) syntax
 
 ## Project Set up
 
