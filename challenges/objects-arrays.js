@@ -125,7 +125,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 */
 const animalNames = []; //defining variable 
 function output(item, index, array){
-  animalNames.push("Name:" + item.animal_name = "Scientific:" + item.scientific_name + "."); //pushing animal names and returning from zoo data all animal names + their scientific name
+  animalNames.push("Name:" + item.animal_name + "Scientific:" + item.scientific_name + "."); //pushing animal names and returning from zoo data all animal names + their scientific name
 }
 zooAnimals.forEach(output); //for each method to return animal name + their scientific name
 console.log(animalNames);
@@ -146,7 +146,7 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 const largerPopulation = [];//defining variable
-const.largerPopulation = zooAnimals.filter(zooAnimalsItem => zooAnimalsItem.population < 5); //searches zoo data and filters animals with population less than 5
+const largerPopulation = zooAnimals.filter(zooAnimalsItem => zooAnimalsItem.population < 5); //searches zoo data and filters animals with population less than 5
 console.log(largerPopulation);
 
 /* Request 4: .reduce() 
@@ -155,7 +155,7 @@ The zoos need to know their total animal population across the United States.  F
 
 */
 const populationTotal = 0; //defining variable
-var populationTotal = zooAnimals.reduce((accumulator.item) => accumulator + item.population, 0)
+var populationTotal = zooAnimals.reduce((accumulator,item) => accumulator + item.population, 0)
 console.log(populationTotal);
 
 
