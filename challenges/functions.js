@@ -32,9 +32,9 @@ function greeting(str1, str2){
 
 
 // /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
@@ -42,6 +42,7 @@ function greeting(str1, str2){
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
+
 
 
 const external = "I'm outside the function";
