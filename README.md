@@ -29,10 +29,14 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+.forEach method does not return anything (undefined).  It simply calls a function on each element in the array.  
+.map method takes the return values and returns a new array.
 
 2. What is the difference between a function and a method?
+a function returns a value.  a method is similar to the function, except it focuses on "internal" part of a class.  it is mainly used in object-oriented programming.
 
 3. What is closure?
+Closure is a feature in JavaScript where an inner function has access to the outer function's variables.  it has access to its own scope, variables defined between its fcurly brackets.  it also has access to the outer function's variables.
 
 4. Describe the four rules of the 'this' keyword.
 
