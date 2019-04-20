@@ -94,9 +94,9 @@ console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = []; //defining variable uni
-for (var i=0, i<graduates.length; i++){
-  if (graduates[i].university.includes("Uni")){
-    uni.push(graduates[i].university)
+for (var i=0, i<graduates.length; i++){ //for loop to search each index in graduates data
+  if (graduates[i].university.includes("Uni")){ //if statement to show after search all universities that start with "uni"
+    uni.push(graduates[i].university) //pushes the result after the search to "uni"
   }
 }
 console.log(uni);
@@ -123,7 +123,11 @@ zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":
 The zoo wants to display both the scientific name and the animal name in front of the habitats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-const animalNames = [];
+const animalNames = []; //defining variable 
+function output(item, index, array){
+  animalNames.push("Name:" + item.animal_name = "Scientific:" + item.scientific_name + "."); //pushing animal names and returning from zoo data all animal names + their scientific name
+}
+zooAnimals.forEach(output); //for each method to return animal name + their scientific name
 console.log(animalNames);
 
 /* Request 2: .map()    
