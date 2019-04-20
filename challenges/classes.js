@@ -7,12 +7,16 @@ function CuboidMaker(length, width, height) {
 }
 
 
+CuboidMaker.prototype.volume = function () {
+    return this.length * this.width * this.height
+}
 class volume {
     constructor(length, width, height) {
         this.length = length;
         this.width = width;
         this.height = height;
     }
+
     get volume() {
         return this.calcArea();
     }
@@ -23,6 +27,10 @@ class volume {
 
 const square = new volume(4, 5, 5);
 
+
+CuboidMaker.prototype.surfaceArea = function () {
+    return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)
+}
 class surfaceArea {
     constructor(length, width, height) {
         this.length = length;
